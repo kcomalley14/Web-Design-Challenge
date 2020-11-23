@@ -4,24 +4,35 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Dashboard</title>
-    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
+
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+
 </head>
 <body>
     <!-- Navbar for Site-->
     <nav class="navbar navbar-expand-lg navbar-light bg-light">
-        <a class="navbar-brand" href="index.html">Latitude</a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-      
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <!-- <div class="nav-content"> -->
+            <a class="navbar-brand text-white" href="index.html">Latitude</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" 
+            data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" 
+            aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+            </button>
+        
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
                 <ul class="navbar-nav ml-auto">    
                     <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" 
+                        role="button" data-toggle="dropdown" aria-haspopup="true" 
+                        aria-expanded="false">
                             Plots
                         </a>
-                        <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdown">
+                        <div class="dropdown-menu dropdown-menu-right" 
+                        aria-labelledby="navbarDropdown">
                             <a class="dropdown-item" href="maxtemp.html">Max Temperature</a>
                             <a class="dropdown-item" href="humidity.html">Humidity</a>
                             <a class="dropdown-item" href="cloudiness.html">Cloudiness</a>
@@ -36,6 +47,7 @@
                     </li>
                 </ul>
             </div>
+        <!-- </div> -->
       </nav>
     
     <!-- Create Content-->
@@ -43,9 +55,11 @@
         <div class="row">
             <div class="col-md-8">
                 <div class="col-md-12">
-                    <h1>Summary: Latitude vs. X</h1>
+                    <h2>Summary: Latitude vs. X</h2>
                     <hr>
-                    <img src="Resources/Fig1.png" alt="Latitude vs. Temperature" width=100%>
+                    <div>
+                        <img class="img-thumbnail" id="landing" src="Resources/Fig1.png" alt="Latitude vs. Temperature">
+                    </div>
                     <p>The purpose of this project was to analyze how weather changes as you get closer to the equator. To
                         accomplish this analysis, we first pulled data from the OpenWeatherMap API to assemble a dataset on over 500
                         cities.</p>
@@ -55,25 +69,29 @@
                         correlations witnesseed.</p>
                 </div>
             </div>
-        </div>
+        
 
         <!-- Visualizations -->
-        <div class="col-md-4">
-            <div class="col-md-12">
-                <h2>Visualizations</h2>
-                <hr>
-                <div class="row">
-                    <div class="col-3 col-md-6">
-                        <a href="#"><img src="Resources/Fig1.png" alt="Latitude vs Temperature"></a>
-                    </div>
-                    <div class="col-3 col-md-6">
-                        <a href="#"><img src="Resources/Fig2.png" alt="Latitude vs Humidity"></a>
-                    </div>
-                    <div class="col-3 col-md-6">
-                        <a href="#"><img src="Resources/Fig3.png" alt="Latitude vs Cloudiness"></a>
-                    </div>
-                    <div class="col-3 col-md-6">
-                        <a href="#"><img src="Resources/Fig4.png" alt="Latitude vs Wind Speed"></a>
+            <div class="col-md-4">
+                <div class="col-md-12">
+                    <h2>Visualizations</h2>
+                    <hr>
+                    <div class="row">
+                        <div class="col-3 col-md-6">
+                            <a href="maxtemp.html"><img src="Resources/Fig1.png" width="100%"  alt="temperature">
+                            </a> 
+                        </div>
+                        <div class="col-3 col-md-6">
+                            <a href="humidity.html"><img src="Resources/Fig2.png" width="100%" alt="humidity"></a>
+                        </div>
+                
+                        <div class="col-3 col-md-6">
+                            <a href="cloudiness.html"><img src="Resources/Fig3.png" width="100%"  alt="cloudiness"></a>
+                        </div>
+
+                        <div class="col-3 col-md-6">
+                            <a href="windspeed.html"><img src="Resources/Fig4.png"width="100%"  alt="wind speed"></a>
+                        </div>
                     </div>
                 </div>
             </div>

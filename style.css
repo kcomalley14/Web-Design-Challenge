@@ -1,0 +1,64 @@
+/* navbar formatting */
+a.navbar-brand {
+    background-color: lightseagreen;
+    font-family: 'Times New Roman', Times, serif;
+    padding: 10px;
+    color: white;
+    font-size: large;
+    font-weight: bold;
+    margin-top: -10px;
+    margin-bottom: -10px;
+}
+
+.nav-item.dropdown.show {
+    background-color: #ddd;
+}
+
+.dropdown-menu {
+    margin: 0;
+}
+
+/* Images formatting */
+img {width: 100%;
+    border: none;}
+
+.img-thumbnail {
+    width: 80%;
+}
+
+h1, h2, h3 {
+    color:lightseagreen;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    padding-top: 15px;
+}
+
+/* .lat-button {
+    width: 100px;
+    background: lightseagreen;
+    font-weight: bold;
+    z-index: 2;
+    display: inline-block;
+} */
+
+body {
+    background-color: rgb(150, 26, 26);
+}
+
+.container {
+    overflow: hidden;
+    padding-top: 50px;
+    padding-bottom: 80px;
+}
+
+
+
+.col-md-12 {
+    background-color: white;
+    padding-top: 15px;
+    padding-bottom: 30px;
+}
+
+p{
+    font-family: 'Times New Roman', Times, serif;
+}
+
