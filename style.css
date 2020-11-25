@@ -1,10 +1,13 @@
 /* navbar formatting */
-a.navbar-brand {
+nav.navbar {
+    background-color: white;
+}
+.navbar-brand {
     background-color: lightseagreen;
     font-family: 'Times New Roman', Times, serif;
     padding: 10px;
     color: white;
-    font-size: large;
+    font-size: x-large;
     font-weight: bold;
     margin-top: -10px;
     margin-bottom: -10px;
@@ -47,36 +50,53 @@ h1, h2, h3 {
 
 /* Text formatting */
 body {
-    background-color: rgb(223, 222, 222);
+    background-color: rgb(155, 151, 151);
 }
 
 .container {
     overflow: hidden;
     padding-top: 50px;
-    padding-bottom: 80px;
+    padding-bottom: 50px;
     font-size: large;
+}
+
+.container.bg-white {
+    margin-top: 50px;
+    margin-bottom: 50px;
 }
 
 p{
     font-family: 'Times New Roman', Times, serif;
 }
 
+.col-md-12 {
+    background-color: white;
+    padding-top: 15px;
+    padding-bottom: 30px;
+}
+
 /* Visualizations formatting */
-img.selected {
+.selected {
     border: 2px solid lightseagreen;
+}
+
+/* Table Formatting */
+.table {
+    padding: 30px;
 }
 
 /* Smaller Screen */
 @media(max-width: 991px) {
-    .navbar.bg-light {
-        background-color: lightseagreen;
-    }
-
     .navbar-collapse {
-        background-color: lightseagreen;
+        background-color: white;
     }
 
     .navbar {
-        padding: inherit;
+        padding: 8px;
+        background-color: lightseagreen;
+    }
+
+    nav.navbar {
+        background-color: lightseagreen;
     }
 }
