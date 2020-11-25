@@ -53,7 +53,7 @@ The website must, at the top of every page, have a navigation menu that:
 Finally, the website must be deployed to GitHub pages.
 When finished, submit to BootcampSpot the links to 1) the deployed app and 2) the GitHub repository.
 
-Considerations
+### Considerations
 
 * You may use the weather data or choose another dataset. Alternatively, you may use the included cities dataset and pull the images from the assets folder.
 * You must use Bootstrap. This includes using the Bootstrap navbar component for the header on every page, the bootstrap table component for the data page, and the Bootstrap grid for responsiveness on the comparison page.
